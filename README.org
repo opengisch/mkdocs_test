@@ -1,0 +1,15 @@
+* mkdocs test
+  Repo to test the creation of documentation using [[https://www.mkdocs.org/][mkdocs]] with the great [[https://squidfunk.github.io/mkdocs-material/][material theme]].
+
+** Local development
+   Install and run local server
+   #+begin_src sh
+     pipenv install
+     pipenv shell
+     mkdocs serve
+   #+end_src
+
+   The page is on [[http://localhost:8000]]. It is autoreloaded on changes.
+
+** Deployment
+   There is a Github action that deploys automatically at every push the site on [[https://opengisch.github.io/mkdocs_test/]]
