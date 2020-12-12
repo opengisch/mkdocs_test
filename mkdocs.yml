@@ -27,7 +27,6 @@ nav:
   - User manual:
       - user/main.md
   - Development:
-      - dev/main.md
       - dev/system.md
       - dev/permissions.md
       - dev/storage.md
