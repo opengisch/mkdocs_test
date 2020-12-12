@@ -71,8 +71,8 @@ Remote
 Local
 
 <video controls width="640">
-    <source src="/assets/legend.mp4"
-            type="video/mp4">
+    <source src="/assets/conditional_visibility.webm"
+            type="video/webm">
     Sorry, your browser doesn't support embedded videos.
 </video>
 
