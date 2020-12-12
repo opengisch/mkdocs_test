@@ -1,0 +1,52 @@
+# Project information
+site_name: QFieldCloud Documentation
+site_url: https://doc.qfield.cloud/
+site_author: OPENGIS.ch
+site_description: >-
+  QFieldCloud Documentation site
+
+# Repository
+repo_name: opengisch/qfieldcloud
+repo_url: https://github.com/opengisch/qfieldcloud
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2020 OPENGIS.ch
+
+# Configuration
+theme:
+  name: material
+  features:
+    - navigation.tabs
+  logo: assets/logo_bee.png
+
+# Page tree
+nav:
+  - Home:
+      - index.md
+  - User manual:
+      - user/main.md
+  - Development:
+      - dev/main.md
+      - dev/system.md
+      - dev/permissions.md
+      - dev/storage.md
+      - dev/web.md
+  - API Reference:
+      - api/v1.md
+      - api/v2.md
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - def_list
+  - attr_list
+  - pymdownx.inlinehilite
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.tabbed
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
