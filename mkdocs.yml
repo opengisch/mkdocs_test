@@ -55,14 +55,14 @@ nav:
   - QFieldCloud:
       - qfieldcloud/concepts.md
       - User Manual:
-          - user/eeee.md
+          - eeee.md
       - Development:
-          - dev/system.md
-          - dev/permissions.md
-          - dev/storage.md
-          - dev/web.md
+          - qfieldcloud/dev/system.md
+          - qfieldcloud/dev/permissions.md
+          - qfieldcloud/dev/storage.md
+          - qfieldcloud/dev/web.md
       - API Reference:
-          - api/v1.md
+          - qfieldcloud/api/v1.md
           - api/v2.md
   - QFieldSync:
       - qfieldsync/main.md
@@ -83,3 +83,7 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - toc:
       permalink: true
+
+# Css
+extra_css:
+  - stylesheets/extra.css

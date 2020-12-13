@@ -6,8 +6,6 @@ storage, including the name of the bucket used, are defined in the
 file `/conf/env.app`.
 
 
-<a id="org1d6fc1b"></a>
-
 ## Prefixes (directories)
 
 The used prefixes (which can be conceptually considered as
@@ -61,14 +59,9 @@ directories) on S3 for users files storage, are the following:
 </table>
 
 
-<a id="orgd481451"></a>
-
 ## APIs
 
 Here is a rough description of how APIs interact with storage.
-
-
-<a id="org882a168"></a>
 
 ### `/files/` endpoints (aka QGIS API)
 
@@ -79,8 +72,6 @@ list, download and delete a file, work directly with the content
 of the storage.
 
 
-<a id="orgb9449f5"></a>
-
 ### `/qfield-files/` endpoints (aka QField API)
 
 The `/qfield-files/` endpoints, work asynchronously. The endpoint
@@ -90,8 +81,6 @@ used on QField. The generated files are saved with the prefix
 `/projects/<uuid:projectid>/export/` that is used by the endpoints
 to list and download files for qfield.
 
-
-<a id="org76466cc"></a>
 
 ### `/deltas/` endpoints
 
