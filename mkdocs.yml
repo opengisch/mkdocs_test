@@ -1,13 +1,13 @@
 # Project information
-site_name: QFieldCloud Documentation
+site_name: QField Ecosystem Documentation
 site_url: https://doc.qfield.cloud/
 site_author: OPENGIS.ch
 site_description: >-
-  QFieldCloud Documentation site
+  QField Documentation site
 
 # Repository
-repo_name: opengisch/qfieldcloud
-repo_url: https://github.com/opengisch/qfieldcloud
+repo_name: opengisch/qfield
+repo_url: https://github.com/opengisch/qfield
 edit_uri: ""
 
 # Copyright
@@ -18,22 +18,51 @@ theme:
   name: material
   features:
     - navigation.tabs
-  logo: assets/logo_bee.png
+  logo: assets/images/qfield_logo.svg
 
 # Page tree
 nav:
   - Home:
-      - index.md
-  - User manual:
-      - user/main.md
-  - Development:
-      - dev/system.md
-      - dev/permissions.md
-      - dev/storage.md
-      - dev/web.md
-  - API Reference:
-      - api/v1.md
-      - api/v2.md
+      - Welcome: index.md
+#      - Case Studies:
+#          - sss.md
+      - support.md
+  - QField:
+      - qfield/concepts.md
+      - qfield/installation.md
+      - Prepare for Work:
+          - qfield/prepare/1-n-pictures.md
+          - qfield/prepare/advanced.md
+          - qfield/prepare/hiding-legend.md
+          - qfield/prepare/attribute-form.md
+          - qfield/prepare/custom-svg.md
+          - qfield/prepare/display-expression.md
+          - qfield/prepare/map-styling.md
+          - qfield/prepare/map-themes.md
+          - qfield/prepare/picture-path.md
+          - qfield/prepare/print.md
+      - Synchronization:
+          - ppp.md
+      - Fieldwork:
+          - ppp.md
+      - Getting Started Tutorials:
+          - ppp.md
+      - Supported Data Formats:
+          - ppp.md
+  - QFieldCloud:
+      - qfieldcloud/concepts.md
+      - User Manual:
+          - user/eeee.md
+      - Development:
+          - dev/system.md
+          - dev/permissions.md
+          - dev/storage.md
+          - dev/web.md
+      - API Reference:
+          - api/v1.md
+          - api/v2.md
+  - QFieldSync:
+      - qfieldsync/main.md
 
 # Extensions
 markdown_extensions:
@@ -49,3 +78,5 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+      permalink: true
