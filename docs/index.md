@@ -2,4 +2,4 @@
 
 QField, QFieldCloud and QFieldSync
 
-[Pssst, click here!](/rick){: .md-button }
+[Pssst, click here!](./rick){: .md-button }

@@ -21,7 +21,7 @@ The field widgets from QGIS are supported on a best effort basis.
 | Relation Reference| :material-check: |                                                 |
 | Relation Widget   | :material-check: |                                                 |
 | Value Relation    | :material-check: |                                                 |
-| Others            | :material-close: | [Funding](/support/#funding)            |
+| Others            | :material-close: | [Funding](../../../support/#funding)            |
 
 ## Relation Widget
 
