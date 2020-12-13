@@ -27,6 +27,7 @@ nav:
 #      - Case Studies:
 #          - sss.md
       - support.md
+      - rick.md
   - QField:
       - qfield/concepts.md
       - qfield/installation.md
