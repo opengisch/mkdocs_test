@@ -1,6 +1,6 @@
 # Project information
 site_name: QField Ecosystem Documentation
-site_url: https://doc.qfield.cloud/
+site_url: https://qfield.org/
 site_author: OPENGIS.ch
 site_description: >-
   QField Documentation site
@@ -20,6 +20,8 @@ theme:
     - navigation.tabs
   logo: assets/images/qfield_logo.svg
   favicon: assets/images/favicon.ico
+  palette:
+    primary: green
 
 # Page tree
 nav:
