@@ -19,6 +19,7 @@ theme:
   features:
     - navigation.tabs
   logo: assets/images/qfield_logo.svg
+  favicon: assets/images/favicon.ico
 
 # Page tree
 nav:
