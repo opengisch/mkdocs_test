@@ -2,7 +2,7 @@
 
 QField allows you to efficiently work on your GIS data outdoor.
 
-QField's optimized user interface for hides the full power of [QGIS](https://qgis.org) under the hood.
+QField's optimized user interface for mobile devices hides the full power of [QGIS](https://qgis.org) under the hood.
 
 <iframe src="https://player.vimeo.com/video/376372805" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <p><a href="https://vimeo.com/376372805">E3_5 QField (QGIS on the Road)</a> from <a href="https://vimeo.com/opengisch">OPENGIS.ch</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
