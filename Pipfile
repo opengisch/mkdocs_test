@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 mkdocs-material = "*"
+fancyboxmd = {path = "./extensions/fancyboxmd", editable = true}
 
 [dev-packages]
 
