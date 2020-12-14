@@ -43,7 +43,7 @@ There is no need to show it in the form, since it will be filled by QField
 and does not contain any human readable information.
 
 <figure>
-    <a href="../../../assets/images/add-1-n-pictures-widgets_hive.png?image=250" data-toggle="lightbox" data-title="Widget Configuration" data-footer="How to configure your widgets">
+    <a data-fancybox="gallery" href="../../../assets/images/add-1-n-pictures-widgets_hive.png">
      <img src="../../../assets/images/add-1-n-pictures-widgets_hive.png" width="600px" alt="Widgets"/>
     </a>
 </figure>
