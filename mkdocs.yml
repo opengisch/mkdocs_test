@@ -22,7 +22,6 @@ theme:
   favicon: assets/images/favicon.ico
   palette:
     primary: green
-  custom_dir: custom_theme
 
 # Page tree
 nav:
@@ -88,3 +87,9 @@ markdown_extensions:
 # Css
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/jquery.fancybox.min.css
+
+# Extra javascript
+extra_javascript:
+  - javascript/jquery.min.js
+  - javascript/jquery.fancybox.min.js
