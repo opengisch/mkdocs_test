@@ -34,16 +34,16 @@ nav:
       - qfield/concepts.md
       - qfield/installation.md
       - Prepare for Work:
-          - qfield/prepare/1-n-pictures.md
-          - qfield/prepare/advanced.md
           - qfield/prepare/hiding-legend.md
           - qfield/prepare/attribute-form.md
-          - qfield/prepare/custom-svg.md
-          - qfield/prepare/display-expression.md
           - qfield/prepare/map-styling.md
           - qfield/prepare/map-themes.md
+          - qfield/prepare/display-expression.md
+          - qfield/prepare/1-n-pictures.md
           - qfield/prepare/picture-path.md
           - qfield/prepare/print.md
+          - qfield/prepare/custom-svg.md
+          - qfield/prepare/advanced.md
       - Synchronization:
           - ppp.md
       - Fieldwork:
