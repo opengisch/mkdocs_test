@@ -22,6 +22,7 @@ theme:
   favicon: assets/images/favicon.ico
   palette:
     primary: green
+  custom_dir: custom_theme
 
 # Page tree
 nav:
