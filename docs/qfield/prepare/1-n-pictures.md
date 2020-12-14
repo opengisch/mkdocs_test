@@ -38,10 +38,14 @@ Create a relation with:
 
 *apiary*
 
-Set the default value of the field id to `uuid()`. No need to show it in the form.
+Set the default value of the field id to `uuid()`.
+There is no need to show it in the form, since it will be filled by QField
+and does not contain any human readable information.
 
 <figure>
-    <img src="../../../assets/images/add-1-n-pictures-widgets_hive.png" width="600px" alt="Widgets"/>
+    <a data-fancybox="gallery" href="../../../assets/images/add-1-n-pictures-widgets_hive.png" data-caption="Widget Configuration">
+     <img src="../../../assets/images/add-1-n-pictures-widgets_hive.png" width="600px" alt="Widgets"/>
+    </a>
 </figure>
 
 Set the relation widget to `Many to one relation` and add the relation to the form

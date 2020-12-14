@@ -87,3 +87,9 @@ markdown_extensions:
 # Css
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/jquery.fancybox.min.css
+
+# Extra javascript
+extra_javascript:
+  - javascript/jquery.min.js
+  - javascript/jquery.fancybox.min.js
