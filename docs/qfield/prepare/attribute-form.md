@@ -222,7 +222,7 @@ QField offers a much more fine-grained control over the last used values and ign
 
 ## Add QML and HTML widgets
 
-You can add a QML graph or an HTML widget
+You can add a QML or HTML widget. By using QML or HTML widgets you are able to display information in charts, tables or otherwise formatted ways.
 
 <video controls width="700">
     <source src="../../../assets/videos/qml_html.webm"
