@@ -8,7 +8,7 @@ class FancyBoxInlineProcessor(LinkInlineProcessor):
 
     def __init__(self, re, preview_width, md):
         self.preview_width = preview_width
-        super().__init__(re, preview_width, md)
+        super().__init__(re, md)
 
     def handleMatch(self, m, data):
         text, index, handled = self.getText(data, m.end(0))
@@ -54,7 +54,7 @@ class FancyBoxExtension(Extension):
         super().__init__(**kwargs)
 
     def extendMarkdown(self, md):
-        preview_width = self.getConfig("preview_width"):
+        preview_width = self.getConfig("preview_width")
         pattern = FancyBoxInlineProcessor(FB_BRACKETS_RE, preview_width, md)
         md.inlinePatterns.register(pattern, "fancybox-brackets", 200)
 
