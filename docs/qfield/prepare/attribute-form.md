@@ -101,12 +101,7 @@ many fields, make a group and configure a visibility expression for a group "dis
 a field "desease" with a checkbox. Only when the checkbox is checked, the list of diseases
 will be available to the user.
 
-<figure>
-    <img src="../../../assets/images/conditional_visibility_configuration.png" width="600px" alt="Conditional visibility configuration"/>
-    <figcaption>
-        Configuration of a group box that will only be shown if the checkbox "measures_taken" is checked.
-    </figcaption>
-</figure>
+!![Conditional visibility configuration](../../../assets/images/conditional_visibility_configuration.png "Configuration of a group box that will only be shown if the checkbox "measures_taken" is checked.")
 
 Let's see what we got on the field:
 
