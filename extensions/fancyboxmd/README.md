@@ -1,6 +1,6 @@
 # Fancybox markdown extension
 
-This markdown extension creates fancybox images.
+This markdown extension creates [fancybox images](http://fancybox.net/).
 
 ### Markdown
 
