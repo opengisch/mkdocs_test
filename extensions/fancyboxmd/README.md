@@ -4,7 +4,7 @@ This markdown extension creates [fancybox images](http://fancybox.net/).
 
 ### Markdown
 
-```
+```md
 !![Title](image.png "Description")
 ```
 
