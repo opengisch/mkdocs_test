@@ -22,8 +22,8 @@ class FancyBoxInlineProcessor(LinkInlineProcessor):
         el_a = etree.Element("a")
         el_a.set("href", src)
         el_a.set("data-fancybox", "gallery")
-        if title is not None:
-            el_a.set("data-caption", title)
+        if text is not None:
+            el_a.set("data-caption", self.unescape(text))
 
         el_img = etree.Element("img")
         el_img.set("src", src)
