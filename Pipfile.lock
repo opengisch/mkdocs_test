@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "560a340748bbeadb1b03dd4f61228a9fff0e050c6d098f3293ad81dc3865a482"
+            "sha256": "18c4c9ead8ffcfc270561d82ee034799e418f1df5a52b242906d54d32c623025"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -25,8 +25,12 @@
             "version": "==7.1.2"
         },
         "fancyboxmd": {
-            "editable": true,
-            "path": "./extensions/fancyboxmd"
+            "hashes": [
+                "sha256:2450793277f18f2124a28bc93435639f3db6faa188ac3e1b74708874780422be",
+                "sha256:fea3b14cfb48d9e29444051f7c90ed90bf074eb4355ced11d0344bed4f0073cb"
+            ],
+            "index": "pypi",
+            "version": "==1.0.1"
         },
         "future": {
             "hashes": [
