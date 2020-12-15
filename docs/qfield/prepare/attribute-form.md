@@ -220,7 +220,7 @@ The editable flag of fields is respected.
 
 QField offers a much more fine-grained control over the last used values and ignores the QGIS setting.
 
-## Add QML and HTML wigets
+## Add QML and HTML widgets
 
 You can add a QML graph or an HTML widget
 
