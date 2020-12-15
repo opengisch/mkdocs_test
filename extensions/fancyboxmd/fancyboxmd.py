@@ -29,8 +29,8 @@ class FancyBoxInlineProcessor(LinkInlineProcessor):
         el_img.set("src", src)
         el_img.set("width", self.preview_width)
 
-        if title is not None:
-            el_img.set("title", title)
+        if text is not None:
+            el_img.set("title", self.unescape(text))
 
         el_img.set('alt', self.unescape(text))
         el_a.append(el_img)
