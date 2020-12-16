@@ -27,9 +27,7 @@ The field widgets from QGIS are supported on a best effort basis.
 
 For more information refer to the relations chapter of the official [QGIS Documentation](https://docs.qgis.org/3.4/en/docs/user_manual/working_with_vector/attribute_table.html#creating-one-or-many-to-many-relations).
 
-<figure>
-    <img src="../../../assets/images/relation_editor_widget_list.png" width="500px" alt=""/>
-</figure>
+!![A list of child features from a different layer](../../../assets/images/relation_editor_widget_list.png)
 
 The relation widget shows all the referencing child features in a list. It is possible to add, delete and open them.
 
@@ -103,12 +101,7 @@ many fields, make a group and configure a visibility expression for a group "dis
 a field "desease" with a checkbox. Only when the checkbox is checked, the list of diseases
 will be available to the user.
 
-<figure>
-    <img src="../../../assets/images/conditional_visibility_configuration.png" width="600px" alt="Conditional visibility configuration"/>
-    <figcaption>
-        Configuration of a group box that will only be shown if the checkbox "measures_taken" is checked.
-    </figcaption>
-</figure>
+!![Conditional visibility configuration](../../../assets/images/conditional_visibility_configuration.png "Configuration of a group box that will only be shown if the checkbox "measures_taken" is checked.")
 
 Let's see what we got on the field:
 
