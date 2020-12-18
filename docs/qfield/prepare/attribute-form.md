@@ -212,3 +212,13 @@ The editable flag of fields is respected.
 ## Remember last values
 
 QField offers a much more fine-grained control over the last used values and ignores the QGIS setting.
+
+## Add QML and HTML widgets
+
+You can add a QML or HTML widget. By using QML or HTML widgets you are able to display information in charts, tables or otherwise formatted ways.
+
+<video controls width="700">
+    <source src="../../../assets/videos/qml_html.webm"
+            type="video/webm">
+    Sorry, your browser doesn't support embedded videos.
+</video>
