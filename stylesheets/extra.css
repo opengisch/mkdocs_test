@@ -1,0 +1,39 @@
+.api-verb-get {
+  border-radius: 4px;
+  background: #61affe;
+  padding: 3px;
+  color: white;
+  font-weight: 800;
+}
+
+.api-verb-post {
+  border-radius: 4px;
+  background: #49cc90;
+  padding: 3px;
+  color: white;
+  font-weight: 800;
+}
+
+.api-verb-put {
+  border-radius: 4px;
+  background: #fca130;
+  padding: 3px;
+  color: white;
+  font-weight: 800;
+}
+
+.api-verb-patch {
+  border-radius: 4px;
+  background: #50e3c2;
+  padding: 3px;
+  color: white;
+  font-weight: 800;
+}
+
+.api-verb-delete {
+  border-radius: 4px;
+  background: #f93e3e;
+  padding: 3px;
+  color: white;
+  font-weight: 800;
+}
