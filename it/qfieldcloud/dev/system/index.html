@@ -1,0 +1,1773 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="QField Documentation site">
+      
+      
+      
+        <meta name="author" content="OPENGIS.ch">
+      
+      
+        <link rel="canonical" href="https://qfield.org/qfieldcloud/dev/system/">
+      
+      
+        
+          <link rel="alternate" href="https://github.com/opengisch/mkdocs_test/en/" hreflang="en">
+        
+          <link rel="alternate" href="https://github.com/opengisch/mkdocs_test/it/" hreflang="it">
+        
+      
+      
+        <link rel="search" type="application/opensearchdescription+xml" href="../../../search.xml" title="QField Ecosystem Documentation Search">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7+insiders-1.13.0">
+    
+    
+      
+        <title>System Documentation - QField Ecosystem Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.3ca7bbfe.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.47d7edde.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/jquery.fancybox.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=JSON.parse(localStorage.getItem("__palette")||"{}");if(void 0!==palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#system-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://qfield.org/" title="QField Ecosystem Documentation" class="md-header-nav__button md-logo" aria-label="QField Ecosystem Documentation">
+      
+  <img src="../../../assets/images/qfield_logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            QField Ecosystem Documentation
+          </span>
+        </div>
+        <div class="md-header-nav__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              System Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header-nav__options">
+      
+        
+          
+          
+          
+          <button class="md-header-nav__button md-icon" title="Switch to light mode" aria-label="Switch to light mode" data-md-option="palette" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 17.5a5.5 5.5 0 100-11 5.5 5.5 0 000 11zm0 1.5a7 7 0 100-14 7 7 0 000 14zm12-7a.75.75 0 01-.75.75h-2.5a.75.75 0 010-1.5h2.5A.75.75 0 0124 12zM4 12a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h2.5A.75.75 0 014 12zm16.485-8.485a.75.75 0 010 1.06l-1.768 1.768a.75.75 0 01-1.06-1.06l1.767-1.768a.75.75 0 011.061 0zM6.343 17.657a.75.75 0 010 1.06l-1.768 1.768a.75.75 0 11-1.06-1.06l1.767-1.768a.75.75 0 011.061 0zM12 0a.75.75 0 01.75.75v2.5a.75.75 0 01-1.5 0V.75A.75.75 0 0112 0zm0 20a.75.75 0 01.75.75v2.5a.75.75 0 01-1.5 0v-2.5A.75.75 0 0112 20zM3.515 3.515a.75.75 0 011.06 0l1.768 1.768a.75.75 0 11-1.06 1.06L3.515 4.575a.75.75 0 010-1.06zm14.142 14.142a.75.75 0 011.06 0l1.768 1.768a.75.75 0 01-1.06 1.06l-1.768-1.767a.75.75 0 010-1.061z"/></svg>
+          </button>
+        
+          
+          
+          
+          <button class="md-header-nav__button md-icon" title="Switch to dark mode" aria-label="Switch to dark mode" data-md-option="palette" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M16.5 6c0 5.799-4.701 10.5-10.5 10.5-.426 0-.847-.026-1.26-.075A8.5 8.5 0 1016.425 4.74c.05.413.075.833.075 1.259zm-1.732-2.04A9.08 9.08 0 0114.999 6a9 9 0 01-11.04 8.768l-.004-.002a9.367 9.367 0 01-.78-.218c-.393-.13-.8.21-.67.602a9.938 9.938 0 00.329.855l.004.01A10.002 10.002 0 0012 22a10.002 10.002 0 004.015-19.16l-.01-.005a9.745 9.745 0 00-.855-.328c-.392-.13-.732.276-.602.67a8.934 8.934 0 01.218.779l.002.005z"/></svg>
+          </button>
+        
+      
+      
+        <div class="md-select">
+          
+          <span class="md-header-nav__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0014.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>
+          </span>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="https://github.com/opengisch/mkdocs_test/en/" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="https://github.com/opengisch/mkdocs_test/it/" class="md-select__link">
+                    Italiano
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+      <div class="md-search__suggest" data-md-component="search-suggest"></div>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/opengisch/qfield" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    opengisch/qfield
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../qfield/concepts/" class="md-tabs__link">
+        QField
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../concepts/" class="md-tabs__link md-tabs__link--active">
+        QFieldCloud
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../qfieldsync/main/" class="md-tabs__link">
+        QFieldSync
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://qfield.org/" title="QField Ecosystem Documentation" class="md-nav__button md-logo" aria-label="QField Ecosystem Documentation">
+      
+  <img src="../../../assets/images/qfield_logo.svg" alt="logo">
+
+    </a>
+    QField Ecosystem Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/opengisch/qfield" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    opengisch/qfield
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" >
+    
+    <label class="md-nav__link" for="nav-1">
+      Home
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Home" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon"></span>
+        Home
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../.." class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../support/" class="md-nav__link">
+      Support and Development
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    
+    <label class="md-nav__link" for="nav-2">
+      QField
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="QField" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        QField
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../qfield/concepts/" class="md-nav__link">
+      QField - your mobile [Q]GIS solution
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../qfield/installation/" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3" >
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Prepare for Work
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Prepare for Work" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        <span class="md-nav__icon md-icon"></span>
+        Prepare for Work
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../qfield/prepare/hiding-legend/" class="md-nav__link">
+      Allow hiding legend nodes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../qfield/prepare/attribute-form/" class="md-nav__link">
+      Attribute Form Configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../qfield/prepare/map-styling/" class="md-nav__link">
+      Map styling and configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../qfield/prepare/map-themes/" class="md-nav__link">
+      Configure Map Themes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../qfield/prepare/display-expression/" class="md-nav__link">
+      Feature Names
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../qfield/prepare/1-n-pictures/" class="md-nav__link">
+      Add a series of pictures to a feature
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../qfield/prepare/picture-path/" class="md-nav__link">
+      Configurable picture path
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../qfield/prepare/print/" class="md-nav__link">
+      Print to PDF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../qfield/prepare/custom-svg/" class="md-nav__link">
+      Custom SVG symbols
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../qfield/prepare/advanced/" class="md-nav__link">
+      Advanced
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4" >
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Synchronization
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Synchronization" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        <span class="md-nav__icon md-icon"></span>
+        Synchronization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../ppp.md" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5" >
+    
+    <label class="md-nav__link" for="nav-2-5">
+      Fieldwork
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Fieldwork" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        <span class="md-nav__icon md-icon"></span>
+        Fieldwork
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../ppp.md" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6" >
+    
+    <label class="md-nav__link" for="nav-2-6">
+      Getting Started Tutorials
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Getting Started Tutorials" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-6">
+        <span class="md-nav__icon md-icon"></span>
+        Getting Started Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../ppp.md" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-7" type="checkbox" id="nav-2-7" >
+    
+    <label class="md-nav__link" for="nav-2-7">
+      Supported Data Formats
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Supported Data Formats" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-7">
+        <span class="md-nav__icon md-icon"></span>
+        Supported Data Formats
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../ppp.md" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      QFieldCloud
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="QFieldCloud" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        QFieldCloud
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../concepts/" class="md-nav__link">
+      Concepts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" >
+    
+    <label class="md-nav__link" for="nav-3-2">
+      User Manual
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Manual" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        User Manual
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../eeee.md" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  
+
+
+  
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" checked>
+    
+    <label class="md-nav__link" for="nav-3-3">
+      Development
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Development" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        Development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        System Documentation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      System Documentation
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    Architecture
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-model" class="md-nav__link">
+    Data model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actors" class="md-nav__link">
+    Actors
+  </a>
+  
+    <nav class="md-nav" aria-label="Actors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#client-qfield-or-other-clients" class="md-nav__link">
+    Client (QField or other clients)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desktop-qgis-qfieldsync-desktop" class="md-nav__link">
+    Desktop (QGIS + QFieldSync Desktop)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-qfieldcloud-qgis-qfieldsync-server" class="md-nav__link">
+    Server (QFieldCloud + QGIS + QFieldSync Server)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entities-and-concepts" class="md-nav__link">
+    Entities and Concepts
+  </a>
+  
+    <nav class="md-nav" aria-label="Entities and Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qgis-project" class="md-nav__link">
+    QGIS Project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qfieldcloud-project" class="md-nav__link">
+    QFieldCloud Project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diff-files" class="md-nav__link">
+    Diff files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apis" class="md-nav__link">
+    APIs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synchronization" class="md-nav__link">
+    Synchronization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    Permissions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-datasources-credentials" class="md-nav__link">
+    Remote datasources credentials
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    Use Cases
+  </a>
+  
+    <nav class="md-nav" aria-label="Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hybrid" class="md-nav__link">
+    Hybrid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offline-database" class="md-nav__link">
+    Offline database
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../permissions/" class="md-nav__link">
+      Permissions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../storage/" class="md-nav__link">
+      Storage
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../web/" class="md-nav__link">
+      Web UI
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4" >
+    
+    <label class="md-nav__link" for="nav-3-4">
+      API Reference
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="API Reference" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        <span class="md-nav__icon md-icon"></span>
+        API Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../api/v1/" class="md-nav__link">
+      API V1 Reference
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../api/v2.md" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
+    <label class="md-nav__link" for="nav-4">
+      QFieldSync
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="QFieldSync" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        QFieldSync
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../qfieldsync/main/" class="md-nav__link">
+      QFieldSync plugin
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    Architecture
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-model" class="md-nav__link">
+    Data model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actors" class="md-nav__link">
+    Actors
+  </a>
+  
+    <nav class="md-nav" aria-label="Actors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#client-qfield-or-other-clients" class="md-nav__link">
+    Client (QField or other clients)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desktop-qgis-qfieldsync-desktop" class="md-nav__link">
+    Desktop (QGIS + QFieldSync Desktop)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-qfieldcloud-qgis-qfieldsync-server" class="md-nav__link">
+    Server (QFieldCloud + QGIS + QFieldSync Server)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entities-and-concepts" class="md-nav__link">
+    Entities and Concepts
+  </a>
+  
+    <nav class="md-nav" aria-label="Entities and Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qgis-project" class="md-nav__link">
+    QGIS Project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qfieldcloud-project" class="md-nav__link">
+    QFieldCloud Project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diff-files" class="md-nav__link">
+    Diff files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apis" class="md-nav__link">
+    APIs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synchronization" class="md-nav__link">
+    Synchronization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    Permissions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-datasources-credentials" class="md-nav__link">
+    Remote datasources credentials
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    Use Cases
+  </a>
+  
+    <nav class="md-nav" aria-label="Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hybrid" class="md-nav__link">
+    Hybrid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offline-database" class="md-nav__link">
+    Offline database
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="system-documentation">System Documentation<a class="headerlink" href="#system-documentation" title="Permanent link">&para;</a></h1>
+<p>The aim of this document is to provide an overview of the system to
+understand the underlaying logic and technology.</p>
+<h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h2>
+<p><img alt="img" src="../../../assets/images/architecture.png" /></p>
+<h2 id="data-model">Data model<a class="headerlink" href="#data-model" title="Permanent link">&para;</a></h2>
+<p><img alt="img" src="../../../assets/images/db_model.png" /></p>
+<h2 id="actors">Actors<a class="headerlink" href="#actors" title="Permanent link">&para;</a></h2>
+<h3 id="client-qfield-or-other-clients">Client (QField or other clients)<a class="headerlink" href="#client-qfield-or-other-clients" title="Permanent link">&para;</a></h3>
+<p>The features are:</p>
+<ul>
+<li>Download QFieldCloud project</li>
+<li>Edit QFieldCloud project's data</li>
+<li>Synchronize data with QFieldCloud</li>
+</ul>
+<h3 id="desktop-qgis-qfieldsync-desktop">Desktop (QGIS + QFieldSync Desktop)<a class="headerlink" href="#desktop-qgis-qfieldsync-desktop" title="Permanent link">&para;</a></h3>
+<p>Features:</p>
+<ul>
+<li>Create QGIS project</li>
+<li>Configure layer actions</li>
+<li>Upload QGIS project and related files</li>
+<li>Edit QGIS project</li>
+</ul>
+<h3 id="server-qfieldcloud-qgis-qfieldsync-server">Server (QFieldCloud + QGIS + QFieldSync Server)<a class="headerlink" href="#server-qfieldcloud-qgis-qfieldsync-server" title="Permanent link">&para;</a></h3>
+<p>Features:</p>
+<ul>
+<li>Create QFieldCloud project</li>
+<li>Create QFieldCloud users and organizations</li>
+<li>Store QGIS project and related files in QFieldCloud project</li>
+<li>Allow to download QFieldCloud project included the offline or
+    hybrid data package</li>
+<li>Apply diff files to the original data</li>
+</ul>
+<h2 id="entities-and-concepts">Entities and Concepts<a class="headerlink" href="#entities-and-concepts" title="Permanent link">&para;</a></h2>
+<h3 id="qgis-project">QGIS Project<a class="headerlink" href="#qgis-project" title="Permanent link">&para;</a></h3>
+<p>A QGIS project is a <code>.qgs</code> or <code>.qgz</code> file. A Project is created on
+QGIS Desktop and uploaded to QFieldCloud using the QGIS's plugin
+QFieldSync. Before the uploading of the QGIS project, it is
+necessary for each layer of the QGIS project an "action" that
+determines how QFieldSync and QField should treat the layer.</p>
+<p>This information is saved within the QGS project as layer's
+<code>customProperty</code>, with the <code>QFieldSync/action</code> key.</p>
+<p>The available actions are:</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Action internal name</th>
+<th scope="col" class="org-left">Name showed in the UI</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left">OFFLINE</td>
+<td class="org-left">Consolidate</td>
+</tr>
+
+
+<tr>
+<td class="org-left">NO_ACTION</td>
+<td class="org-left">Live layer</td>
+</tr>
+
+
+<tr>
+<td class="org-left">REMOVE</td>
+<td class="org-left">Ignore layer</td>
+</tr>
+
+
+<tr>
+<td class="org-left">COPY</td>
+<td class="org-left">Copy</td>
+</tr>
+
+
+<tr>
+<td class="org-left">KEEP_EXISTING</td>
+<td class="org-left">Keep Existing</td>
+</tr>
+</tbody>
+</table>
+
+<p>This would be the behavior of QFieldSync Desktop with the different
+layer actions:</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Action</th>
+<th scope="col" class="org-left">File based layer</th>
+<th scope="col" class="org-left">Not file based layer</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left">OFFLINE</td>
+<td class="org-left">Create a consolidated copy of the data</td>
+<td class="org-left">Create a consolidated copy of the data</td>
+</tr>
+
+
+<tr>
+<td class="org-left">NO_ACTION</td>
+<td class="org-left">N/A</td>
+<td class="org-left">No action on the layer</td>
+</tr>
+
+
+<tr>
+<td class="org-left">REMOVE</td>
+<td class="org-left">Remove the layer from the project</td>
+<td class="org-left">Remove the layer from the project</td>
+</tr>
+
+
+<tr>
+<td class="org-left">COPY</td>
+<td class="org-left">Make source path relative and copy the file</td>
+<td class="org-left">N/A</td>
+</tr>
+
+
+<tr>
+<td class="org-left">KEEP_EXISTING</td>
+<td class="org-left">Make source path relative and copy the file if it does not exist</td>
+<td class="org-left">N/A</td>
+</tr>
+</tbody>
+</table>
+
+<p>This is the behavior of QFieldCloud (QFieldSync Server) with the
+layers:</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Action</th>
+<th scope="col" class="org-left">File based layer</th>
+<th scope="col" class="org-left">Not file based</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left">OFFLINE</td>
+<td class="org-left">Create consolidated copy of the data on pull, apply delta file on push to original data source</td>
+<td class="org-left">Create consolidated copy of the data on pull, apply delta file on push to original data source</td>
+</tr>
+
+
+<tr>
+<td class="org-left">NO_ACTION</td>
+<td class="org-left">N/A</td>
+<td class="org-left">No action on the layer</td>
+</tr>
+
+
+<tr>
+<td class="org-left">REMOVE</td>
+<td class="org-left">Remove the layer from the project</td>
+<td class="org-left">Remove the layer from the project</td>
+</tr>
+
+
+<tr>
+<td class="org-left">COPY</td>
+<td class="org-left">Make source path relative and create copy of the data on pull, apply delta file on push to original data source</td>
+<td class="org-left">N/A</td>
+</tr>
+
+
+<tr>
+<td class="org-left">KEEP_EXISTING</td>
+<td class="org-left">Make source path relative and create copy of the data on pull, apply delta file on push to original data source</td>
+<td class="org-left">N/A</td>
+</tr>
+</tbody>
+</table>
+
+<p>This is the behavior of QField with the layers:</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Action</th>
+<th scope="col" class="org-left">File based layer</th>
+<th scope="col" class="org-left">Not file based layer</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left">OFFLINE</td>
+<td class="org-left">Create and push deltafile</td>
+<td class="org-left">N/A (it's always file based at this point)</td>
+</tr>
+
+
+<tr>
+<td class="org-left">NO_ACTION</td>
+<td class="org-left">N/A</td>
+<td class="org-left">Edit the online (live) database</td>
+</tr>
+
+
+<tr>
+<td class="org-left">REMOVE</td>
+<td class="org-left">N/A (the layer is no longer there)</td>
+<td class="org-left">N/A (the layer is no longer there)</td>
+</tr>
+
+
+<tr>
+<td class="org-left">COPY</td>
+<td class="org-left">Create and push deltafile</td>
+<td class="org-left">N/A</td>
+</tr>
+
+
+<tr>
+<td class="org-left">KEEP_EXISTING</td>
+<td class="org-left">Create and push deltafile</td>
+<td class="org-left">N/A</td>
+</tr>
+</tbody>
+</table>
+
+<p>In summary, for with QFieldCloud:</p>
+<ul>
+<li><code>NO_ACTION</code> is used for online layers that are located on a server
+    accessible via the Internet and that are modified directly by
+    QField.</li>
+<li><code>HYBRID</code> means that a geopackage will be generated on the
+    server (or directly on the desktop for file-based layers) and
+    downloaded by clients. The client will generate deltafiles of
+    the changes.</li>
+<li><code>OFFLINE</code> is used for example to work with local databases not
+    visible by QFieldCloud which are consolidated before being
+    loaded from the desktop to the server and are not synchronized
+    with the original data by QFieldCloud.</li>
+<li><code>REMOVE</code> will simply remove the layer from the project.</li>
+<li><code>KEEP_EXISTENT</code> will not be used for QFieldCloud syncronizations.</li>
+</ul>
+<p>From QFieldSync it will be possible to update a project already
+loaded on QFieldCloud. In the event that the changes concern only
+styles, forms etc. but not the structure of the layers, the
+project on the server will simply be updated.
+If there are changes in the layers structure, the project will be
+reset on the server (delta files will be deleted) and for each
+client it will be necessary to download the updated version of the
+project before being able to push new changes.</p>
+<h3 id="qfieldcloud-project">QFieldCloud Project<a class="headerlink" href="#qfieldcloud-project" title="Permanent link">&para;</a></h3>
+<p>Is composed of one and only one QGIS project and the possible
+related files (e.g. geopackages, images, &#x2026;) included the offline
+or hybrid data package.</p>
+<h3 id="diff-files">Diff files<a class="headerlink" href="#diff-files" title="Permanent link">&para;</a></h3>
+<h3 id="apis">APIs<a class="headerlink" href="#apis" title="Permanent link">&para;</a></h3>
+<p>The autogenerated REST API documentation is available on <a href="http://dev.qfield.cloud/swagger/">http://dev.qfield.cloud/swagger/</a></p>
+<h3 id="synchronization">Synchronization<a class="headerlink" href="#synchronization" title="Permanent link">&para;</a></h3>
+<h3 id="permissions">Permissions<a class="headerlink" href="#permissions" title="Permanent link">&para;</a></h3>
+<h3 id="remote-datasources-credentials">Remote datasources credentials<a class="headerlink" href="#remote-datasources-credentials" title="Permanent link">&para;</a></h3>
+<h2 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h2>
+<h3 id="hybrid">Hybrid<a class="headerlink" href="#hybrid" title="Permanent link">&para;</a></h3>
+<p><strong>Hybrid editing mode with synchronization on the server</strong>
+<img alt="img" src="../../../assets/images/hybrid-schema.png" /></p>
+<h3 id="offline-database">Offline database<a class="headerlink" href="#offline-database" title="Permanent link">&para;</a></h3>
+<p><strong>Offline editing mode with desktop synchronization</strong>
+<img alt="img" src="../../../assets/images/offline-schema.png" /></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../concepts/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Concepts
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../permissions/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Permissions
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 OPENGIS.ch
+          </div>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.49293c47.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f4f0c901.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: ["navigation.tabs"],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.0f64ce30.min.js"
+          }, typeof search !== "undefined" && search),
+          version: {}
+        })
+      </script>
+      
+        <script src="../../../javascript/jquery.min.js"></script>
+      
+        <script src="../../../javascript/jquery.fancybox.min.js"></script>
+      
+    
+  </body>
+</html>
