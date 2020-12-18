@@ -103,3 +103,7 @@ extra_css:
 extra_javascript:
   - javascript/jquery.min.js
   - javascript/jquery.fancybox.min.js
+
+extra:
+  # Remove "Made with Material for MkDocs" from footer
+  generator: false
