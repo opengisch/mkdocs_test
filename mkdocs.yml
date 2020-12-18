@@ -21,7 +21,16 @@ theme:
   logo: assets/images/qfield_logo.svg
   favicon: assets/images/favicon.ico
   palette:
-    primary: green
+    - scheme: default
+      primary: green
+      toggle:
+        icon: octicons/sun-24
+        name: Switch to light mode
+    - scheme: slate
+      primary: blue
+      toggle:
+        icon: octicons/moon-24
+        name: Switch to dark mode
 
 # Page tree
 nav:
@@ -94,3 +103,7 @@ extra_css:
 extra_javascript:
   - javascript/jquery.min.js
   - javascript/jquery.fancybox.min.js
+
+extra:
+  # Remove "Made with Material for MkDocs" from footer
+  generator: false
