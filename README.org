@@ -10,6 +10,17 @@
    #+end_src
 
    The page is on [[http://localhost:8000]]. It is autoreloaded on changes.
+** Insiders version
+   If you want to use the insiders only features locally, you should
+   uninstall `mkdocs-material` from your pipenv and install it using
+   the private fork of the insiders repo in the opengisch organization
+   (of course you need access to the opengisch organization and an
+   access token):
+
+   #+begin_src sh
+     pipenv uninstall mkdocs-material
+     pipenv install -v git+https://YOUR_GITHUB_USERNAME:YOUR_GITHUB_TOKEN@github.com/opengisch/mkdocs-material-insiders#egg=mkdocs-material
+   #+end_src
 
 ** Deployment
    There is a Github action that deploys automatically at every push the site on [[https://opengisch.github.io/mkdocs_test/]]
