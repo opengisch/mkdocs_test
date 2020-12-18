@@ -24,12 +24,12 @@ theme:
     - scheme: default
       primary: green
       toggle:
-        icon: material/toggle-switch
+        icon: octicons/sun-24
         name: Switch to light mode
     - scheme: slate
       primary: blue
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: octicons/moon-24
         name: Switch to dark mode
 
 # Page tree
