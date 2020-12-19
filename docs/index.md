@@ -1,3 +1,4 @@
-# Welcome to the QField Ecosystem Documentation
-
-QField, QFieldCloud and QFieldSync
+---
+template: home.html
+title: QField Ecosystem Documentation
+---

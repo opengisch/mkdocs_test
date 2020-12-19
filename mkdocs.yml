@@ -16,8 +16,10 @@ copyright: Copyright &copy; 2020 OPENGIS.ch
 # Configuration
 theme:
   name: material
+  custom_dir: theme_overrides/
   features:
     - navigation.tabs
+    - search.suggest
   logo: assets/images/qfield_logo.svg
   favicon: assets/images/favicon.ico
   palette:
@@ -107,3 +109,19 @@ extra_javascript:
 extra:
   # Remove "Made with Material for MkDocs" from footer
   generator: false
+  # Languages. Don't add translated content into this repo It will be
+  # added by github ci based on transifex translations.
+  alternate:
+    - name: English
+      link: https://opengisch.github.io/mkdocs_test/en/
+      lang: en
+    - name: Italiano
+      link: https://opengisch.github.io/mkdocs_test/it/
+      lang: it
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/opengisch
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/opengisch
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/opengisch/
